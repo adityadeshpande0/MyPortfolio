@@ -1,3 +1,2 @@
 # MyPortfolio
-React JS Website portfolio
-Hello
+React JS Website portfolio : Under Development
