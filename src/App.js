@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         Aditya Deshpande
+         Aditya 
         </a>
         <a>My Portfolio is Under Development</a>
       </header>
