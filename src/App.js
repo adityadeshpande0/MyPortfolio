@@ -17,7 +17,7 @@ function App() {
         >
          Aditya 
         </a>
-        <a>My Portfolio is Under Development</a>
+        <a>This is Under Development</a>
       </header>
     </div>
   );
