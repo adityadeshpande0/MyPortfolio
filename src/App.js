@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         Hello I am
@@ -18,7 +19,8 @@ function App() {
          Aditya 
         </a>
         <a>This is Under Development</a>
-      </header>
+      </header> */}
+      <Navbar/>
     </div>
   );
 }
