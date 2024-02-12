@@ -1,46 +1,19 @@
 import React from "react";
 import vs_icon from "..//..//Assets/Images/vs-code-image.svg";
-
+import "../Navbar/navbarStyles.css";
 function Navbar() {
-  const navLinks = ["file", "edid", "view", "go", "run", "terminal", "help"];
+  const navLinks = ["file", "edit", "view", "go", "run", "terminal", "help"];
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        backgroundColor: "#252526",
-      }}
-    >
-      <div>
-        <img
-          src={vs_icon}
-          alt="vs-code"
-          style={{ width: "30px", height: "30px" }}
-        />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-start",
-        }}
-      >
+    <div className="mainblock-navbar">
+      <img src={vs_icon} alt="vs-code" className="logo-navbar" />
+      <div className="linkblock-navbar">
         {navLinks.map((links) => (
-          <p
-            style={{
-              color: "#ffff",
-              textTransform: "capitalize",
-              margin:"5px"
-            }}
-          >
-            {links}
-          </p>
+          <p className="linktext-navbar">{links}</p>
         ))}
       </div>
-      <div>
-        <p>Aditya Deshpande - Portfolio</p>
+      <div className="titleblock-navbar">
+        <p className="title-navbar">Aditya Deshpande - Portfolio</p>
       </div>
     </div>
   );
