@@ -4,16 +4,18 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .first-block-footer {
-  margin-left: 10px;
   display: flex;
   align-items: center;
 }
-.second-parent-block-footer{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.second-parent-block-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 .second-block-footer {
   margin-left: 40px;
@@ -22,7 +24,7 @@
   display: flex;
   flex-direction: row;
 }
-.text-footer{
-    color: #ffff;
-    font-size: 12px;
+.text-footer {
+  color: #ffff;
+  font-size: 12px;
 }
