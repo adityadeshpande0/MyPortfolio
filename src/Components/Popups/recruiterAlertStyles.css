@@ -1,3 +1,29 @@
 .top-block-alert{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-alert{
+    margin-right: 8px;
+}
+.top-text-alert{
+    text-transform: capitalize;
+}
+.bottom-text-alert{
+    text-transform: capitalize;
+}
+.bottom-block-alert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-alert{
+    background-color: #0E639C;
+    color: #ffff;
+    text-transform: capitalize;
+    padding: 10px;
+    width: 80px;
+    border: none;
+    margin: 10px;
 }
