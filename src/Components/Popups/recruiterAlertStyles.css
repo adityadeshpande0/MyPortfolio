@@ -55,4 +55,7 @@
     .bottom-text-alert {
        font-size: 12px;
       }
+      .main-block-alert{
+        width: auto;
+      }
 }

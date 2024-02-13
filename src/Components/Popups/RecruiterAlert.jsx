@@ -1,4 +1,4 @@
-import { Paper, Typography } from "@mui/material";
+import {Typography } from "@mui/material";
 import React from "react";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import "..//Popups/recruiterAlertStyles.css";
