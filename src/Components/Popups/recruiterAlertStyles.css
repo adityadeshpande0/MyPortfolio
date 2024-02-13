@@ -1,8 +1,10 @@
 .main-block-alert {
   margin: 10px;
   background-color: #252526;
-  padding: 15px;
+  padding: 10px;
   width: 500px;
+  justify-content: center;
+  align-items: center;
 }
 .top-block-alert {
   display: flex;
@@ -15,7 +17,6 @@
 .top-text-alert{
     color: #FFFF00;
     font-size: 16px;
-    font-weight: 700;
 }
 .logo-alert {
   margin-right: 8px;
@@ -46,6 +47,15 @@
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-alert:hover{
+    background-color: #ffff;
+    color: #252526;
+}
+.button-alert:active{
+    background-color: #ffff;
+    color: #252526;
 }
 .button-block-alert{
     display: flex;
@@ -53,9 +63,14 @@
 }
 @media (max-width: 600px) {
     .bottom-text-alert {
-       font-size: 12px;
+       font-size: 14px;
       }
       .main-block-alert{
         width: auto;
+        padding: 10px;
+        margin: 10px;
+      }
+      .button-alert{
+        margin: 5px;
       }
 }

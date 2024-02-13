@@ -1,4 +1,3 @@
-import {Typography } from "@mui/material";
 import React from "react";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import "..//Popups/recruiterAlertStyles.css";
@@ -7,14 +6,10 @@ function RecruiterAlert() {
     <div className="main-block-alert">
       <div className="top-block-alert">
         <InfoOutlinedIcon className="logo-alert" />
-        <Typography className="top-text-alert">
-          are you a recruiter ?
-        </Typography>
+        <p className="top-text-alert">are you a recruiter ?</p>
       </div>
       <div className="bottom-block-alert">
-        <Typography className="bottom-text-alert">
-          download my resume
-        </Typography>
+        <p className="bottom-text-alert">download my resume</p>
         <div className="button-block-alert">
           <button className="button-alert">yes</button>
           <button className="button-alert">no</button>
