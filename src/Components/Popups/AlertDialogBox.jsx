@@ -1,7 +1,7 @@
 import React from "react";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import "..//Popups/recruiterAlertStyles.css";
-function RecruiterAlert() {
+import "..//Popups/alertDialogBoxStyles.css";
+function AlertDialogBox() {
   return (
     <div className="main-block-alert">
       <div className="top-block-alert">
@@ -19,4 +19,4 @@ function RecruiterAlert() {
   );
 }
 
-export default RecruiterAlert;
+export default AlertDialogBox;
