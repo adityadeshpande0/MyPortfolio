@@ -1,26 +1,12 @@
-
-import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import RecruiterAlert from "./Components/Popups/RecruiterAlert";
 
 function App() {
   return (
     <div>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        Hello I am
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         Aditya 
-        </a>
-        <a>This is Under Development</a>
-      </header> */}
-      <Navbar/>
+      <Navbar />
+      <RecruiterAlert/>
     </div>
   );
 }
