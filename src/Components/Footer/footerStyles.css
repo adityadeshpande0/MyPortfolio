@@ -12,6 +12,7 @@
 }
 .second-parent-block-footer{
     display: flex;
+    align-items: center;
     flex-direction: row;
 }
 .second-block-footer {
@@ -20,4 +21,8 @@
 .third-block-footer {
   display: flex;
   flex-direction: row;
+}
+.text-footer{
+    color: #ffff;
+    font-size: 12px;
 }
