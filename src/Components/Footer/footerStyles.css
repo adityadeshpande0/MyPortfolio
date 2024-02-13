@@ -1,9 +1,23 @@
-.main-block-footer{
-    background-color: #007ACC;
-    display: flex;
-    align-items: center;
+.main-block-footer {
+  background-color: #007acc;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.first-block-footer{
+.first-block-footer {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.second-parent-block-footer{
     display: flex;
     flex-direction: row;
+}
+.second-block-footer {
+  margin-left: 40px;
+}
+.third-block-footer {
+  display: flex;
+  flex-direction: row;
 }
