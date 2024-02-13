@@ -1,0 +1,9 @@
+.main-block-footer{
+    background-color: #007ACC;
+    display: flex;
+    align-items: center;
+}
+.first-block-footer{
+    display: flex;
+    flex-direction: row;
+}
