@@ -4,7 +4,7 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import "..//Popups/recruiterAlertStyles.css";
 function RecruiterAlert() {
   return (
-    <Paper>
+    <div className="main-block-alert">
       <div className="top-block-alert">
         <InfoOutlinedIcon className="logo-alert" />
         <Typography className="top-text-alert">
@@ -15,12 +15,12 @@ function RecruiterAlert() {
         <Typography className="bottom-text-alert">
           download my resume
         </Typography>
-        <div>
+        <div className="button-block-alert">
           <button className="button-alert">yes</button>
           <button className="button-alert">no</button>
         </div>
       </div>
-    </Paper>
+    </div>
   );
 }
 
