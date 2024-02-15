@@ -12,7 +12,7 @@ function Routers() {
         <Navbar />
         <Appbar />
         <Routes>
-          <Route exact path="/" Component={Home} />
+          {/* <Route exact path="/" Component={Home} /> */}
         </Routes>
         <Footer />
       </div>

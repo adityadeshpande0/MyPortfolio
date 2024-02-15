@@ -4,13 +4,11 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
 .first-block-footer {
-  display: flex;
-  align-items: center;
+  padding: 5px;
 }
 .second-parent-block-footer {
   display: flex;
@@ -18,6 +16,7 @@
   flex-direction: row;
 }
 .second-block-footer {
+  padding: 5px;
   margin-left: 40px;
 }
 .third-block-footer {
@@ -27,4 +26,15 @@
 .text-footer {
   color: #ffff;
   font-size: 12px;
+}
+.first-block-footer:active{
+  background-color: aliceblue;
+}
+.first-block-footer:hover{
+  background-color: #0062a3;
+  cursor: pointer;
+}
+.second-block-footer:hover{
+  background-color: #0062a3;
+  cursor: pointer;
 }
