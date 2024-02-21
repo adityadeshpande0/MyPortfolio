@@ -1,10 +1,10 @@
 import React from 'react'
-import AlertDialogBox from '../Popups/AlertDialogBox'
+// import AlertDialogBox from '../Popups/AlertDialogBox'
 
 function Home() {
   return (
     <div>
-      <AlertDialogBox/>
+      This is Homepage
     </div>
   )
 }
