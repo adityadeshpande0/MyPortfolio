@@ -10,13 +10,13 @@ function Footer() {
     <div className="main-block-footer">
       <div className="second-parent-block-footer">
         <Stack direction="row" spacing={1} className="first-block-footer">
-          <img className="icon-footer" src={branchIcon} />
+          <img alt="branch" className="icon-footer" src={branchIcon} />
           <p className="text-footer">main</p>
         </Stack>
         <Stack direction="row" spacing={1} className="second-block-footer">
-          <img className="icon-footer" src={crossIcon} />
+          <img alt="cross" className="icon-footer" src={crossIcon} />
           <p className="text-footer">0</p>
-          <img className="icon-footer" src={alertIcon} />
+          <img alt="alert" className="icon-footer" src={alertIcon} />
           <p className="text-footer">0</p>
         </Stack>
       </div>
@@ -24,7 +24,7 @@ function Footer() {
         <p className="text-footer">Ln 17, Col 25</p>
         <p className="text-footer">UTF-8</p>
         <p className="text-footer">React JS</p>
-        <img className="icon-footer" src={bellIcon} />
+        <img alt="bell" className="icon-footer" src={bellIcon} />
       </Stack>
     </div>
   );
