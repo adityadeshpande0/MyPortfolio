@@ -1,45 +1,49 @@
-import { Box, Stack } from "@mui/material";
+import { Box } from "@mui/material";
 import React, { useState } from "react";
 import "../Appbar/appbarStyles.css";
-import FileCopyOutlinedIcon from "@mui/icons-material/FileCopyOutlined";
-
+import {
+  FileCopyOutlined as FileCopyOutlinedIcon,
+  Settings,
+  AccountCircleOutlined,
+  GitHub,
+  Create,
+  Code,
+  Email,
+} from "@mui/icons-material";
 function Appbar() {
   const [clickedIcon, setClickedIcon] = useState(null);
 
   const handleClick = (index) => {
     setClickedIcon(index);
   };
-
+  const icons = [
+    { Icon: FileCopyOutlinedIcon, index: 0 },
+    { Icon: GitHub, index: 1 },
+    { Icon: Code, index: 2 },
+    { Icon: Create, index: 3 },
+    { Icon: Email, index: 4 },
+  ];
   return (
     <Box className="main-block-appbar">
       <Box
         sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
       >
-        <FileCopyOutlinedIcon
-          className={`icon-appbar ${clickedIcon === 0 ? "clicked" : ""}`}
-          onClick={() => handleClick(0)}
-        />
-        <FileCopyOutlinedIcon
-          className={`icon-appbar ${clickedIcon === 1 ? "clicked" : ""}`}
-          onClick={() => handleClick(1)}
-        />
-        <FileCopyOutlinedIcon
-          className={`icon-appbar ${clickedIcon === 2 ? "clicked" : ""}`}
-          onClick={() => handleClick(2)}
-        />
-        <FileCopyOutlinedIcon
-          className={`icon-appbar ${clickedIcon === 3 ? "clicked" : ""}`}
-          onClick={() => handleClick(3)}
-        />
+        {icons.map(({ Icon, index }) => (
+          <Icon
+            key={index}
+            className={`icon-appbar ${clickedIcon === index ? "clicked" : ""}`}
+            onClick={() => handleClick(index)}
+          />
+        ))}
       </Box>
       <Box>
-        <FileCopyOutlinedIcon
-          className={`icon-appbar ${clickedIcon === 4 ? "clicked" : ""}`}
-          onClick={() => handleClick(4)}
-        />
-        <FileCopyOutlinedIcon
+        <AccountCircleOutlined
           className={`icon-appbar ${clickedIcon === 5 ? "clicked" : ""}`}
           onClick={() => handleClick(5)}
+        />
+        <Settings
+          className={`icon-appbar ${clickedIcon === 6 ? "clicked" : ""}`}
+          onClick={() => handleClick(6)}
         />
       </Box>
     </Box>

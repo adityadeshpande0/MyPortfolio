@@ -10,6 +10,7 @@
 .icon-appbar{
     padding: 3.5px;
     margin: 10px;
+    color: #979797;
 }
 .icon-appbar.clicked {
     color: white;
