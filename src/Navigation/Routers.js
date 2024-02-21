@@ -11,6 +11,7 @@ import Blogs from "..//Components/MyBlogs/Blogs";
 import Contact from "../Components/ContactInfo/Contact";
 import Profile from "../Components/MyProfile/Profile";
 import Sidepanel from "../Components/Sidepanel/Sidepanel";
+import Settings from "../Components/Settings/Settings";
 function Routers() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function Routers() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<Profile />} />
+            <Route path="/settings" element={<Settings/>}/>
           </Routes>
         </div>
         <Footer />
