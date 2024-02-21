@@ -1,0 +1,18 @@
+.main-block-appbar{
+    height: 90.8vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    width: 2.5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-appbar{
+    padding: 3.5px;
+    margin: 10px;
+}
+.icon-appbar.clicked {
+    color: white;
+    border-left: 2px solid #EA5C00;
+  }
+  
