@@ -10,6 +10,7 @@ import Projects from "../Components/Projects/Projects";
 import Blogs from "..//Components/MyBlogs/Blogs";
 import Contact from "../Components/ContactInfo/Contact";
 import Profile from "../Components/MyProfile/Profile";
+import Sidepanel from "../Components/Sidepanel/Sidepanel";
 function Routers() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function Routers() {
         <Navbar />
         <div className="content-block-router">
           <Appbar />
+          <Sidepanel/>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/github" element={<Github />} />
