@@ -7,6 +7,11 @@
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 768px) {
+    .main-block-appbar {
+     width: 35px;
+    }
+  }
 .icon-appbar{
     padding: 3.5px;
     margin: 10px;
