@@ -1,0 +1,14 @@
+.explore-sidepanel{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.text-explore-sidepanel{
+    text-transform: uppercase;
+}
+.main-block-sidepanel{
+    background-color: #252526;
+}
+p{
+    color: #CCCCCC;
+}
