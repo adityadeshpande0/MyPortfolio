@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import "..//Sidepanel/sidepanelStyles.css";
 import reactIcon from "..//..//Assets/Images/icon_react_sidepanel.svg";
 
 function Sidepanel() {
-  const [collapsed, setCollapsed] = useState(true); // State to manage collapse/expand
+  const [collapsed, setCollapsed] = useState(false); // State to manage collapse/expand
 
   const data = [
     { id: 1, title: "home.jsx", imageURL: reactIcon },
@@ -24,37 +25,21 @@ function Sidepanel() {
     <div className="main-block-sidepanel">
       <div className="explore-sidepanel">
         <p className="text-explore-sidepanel">explorer</p>
-        <MoreHorizIcon style={{ color: "#CCCCCC" }} />
+        <MoreHorizIcon className="three-dots-sidepanel" style={{ color: "#CCCCCC", cursor:"pointer" }} />
       </div>
       <div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            cursor: "pointer",
-          }}
-          onClick={toggleCollapse} // Call toggleCollapse when clicked
-        >
-          <KeyboardArrowDownIcon style={{ color: "#CCCCCC" }} />
+        <div className="explore-block-sidepanel" onClick={toggleCollapse}>
+        {collapsed ? (
+            <KeyboardArrowDownIcon style={{ color: "#CCCCCC" }} />
+          ) : (
+            <KeyboardArrowUpIcon style={{ color: "#CCCCCC" }} />
+          )}
           <p style={{ textTransform: "uppercase" }}>aditya's portfolio</p>
         </div>
         {!collapsed &&
           data.map((data) => (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                margin: 0,
-                cursor: "pointer",
-              }}
-              key={data.id}
-            >
-              <img
-                className="img-sidepanel"
-                src={data.imageURL}
-                alt="react"
-              />
+            <div className="file-link-sidepanel" key={data.id}>
+              <img className="img-sidepanel" src={data.imageURL} alt="react" />
               <p>{data.title}</p>
             </div>
           ))}
