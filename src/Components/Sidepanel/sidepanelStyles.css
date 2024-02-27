@@ -21,7 +21,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   cursor: pointer;
   padding: 0px 10px 0px 10px;
 }
@@ -45,4 +45,10 @@ p {
 .three-dots-sidepanel:hover {
   background-color: #494949;
   border-radius: 5px;
+}
+@media screen and (max-width: 600px){
+  .main-block-sidepanel{
+    display: none;
+  }
+  
 }
