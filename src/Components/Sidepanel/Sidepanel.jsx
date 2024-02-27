@@ -9,16 +9,17 @@ import htmlIcon from "..//..//Assets/Images/icon_html_sidepanel.svg";
 import cssIcon from "..//..//Assets/Images/icon_css_sidepanel.svg";
 import jsonIcon from "..//..//Assets/Images/icon_json_sidepanel.svg";
 import mdgitIcon from "..//..//Assets/Images/icon_mdgit_sidepanel.svg";
+import { Link } from "react-router-dom";
 function Sidepanel() {
   const [collapsed, setCollapsed] = useState(false); // State to manage collapse/expand
 
   const data = [
-    { id: 1, title: "home.jsx", imageURL: reactIcon },
-    { id: 2, title: "about.html", imageURL: htmlIcon },
-    { id: 3, title: "projects.js", imageURL: jsIcon },
-    { id: 4, title: "contact.css", imageURL: cssIcon },
-    { id: 5, title: "blogs.json", imageURL: jsonIcon },
-    { id: 6, title: "github.md", imageURL: mdgitIcon },
+    { id: 1, routeLink: "", title: "home.jsx", imageURL: reactIcon },
+    { id: 2, routeLink: "about", title: "about.html", imageURL: htmlIcon },
+    { id: 3, routeLink: "projects", title: "projects.js", imageURL: jsIcon },
+    { id: 4, routeLink: "contact", title: "contact.css", imageURL: cssIcon },
+    { id: 5, routeLink: "blogs", title: "blogs.json", imageURL: jsonIcon },
+    { id: 6, routeLink: "github", title: "github.md", imageURL: mdgitIcon },
   ];
 
   const toggleCollapse = () => {
@@ -45,10 +46,16 @@ function Sidepanel() {
         </div>
         {!collapsed &&
           data.map((data) => (
-            <div className="file-link-sidepanel" key={data.id}>
-              <img className="img-sidepanel" src={data.imageURL} alt="react" />
-              <p>{data.title}</p>
-            </div>
+            <Link to={data.routeLink}>
+              <div className="file-link-sidepanel" key={data.id}>
+                <img
+                  className="img-sidepanel"
+                  src={data.imageURL}
+                  alt="react"
+                />
+                <p>{data.title}</p>
+              </div>
+            </Link>
           ))}
       </div>
     </div>
