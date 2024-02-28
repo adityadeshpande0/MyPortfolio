@@ -42,7 +42,7 @@ function Sidepanel() {
           ) : (
             <KeyboardArrowUpIcon style={{ color: "#CCCCCC" }} />
           )}
-          <p style={{ textTransform: "capitalize" }}>aditya's portfolio</p>
+          <p style={{ textTransform: "uppercase" }}>aditya's portfolio</p>
         </div>
         {!collapsed &&
           data.map((data) => (
