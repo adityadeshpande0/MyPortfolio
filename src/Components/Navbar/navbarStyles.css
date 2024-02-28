@@ -22,12 +22,15 @@
   line-height: 0px;
 }
 .linktext-navbar {
-  color: #ffff;
+  color: #CCCC;
   font-size: 13px;
   text-transform: capitalize;
   margin: 10px;
   cursor: pointer;
   line-height: 0px;
+}
+.linktext-navbar:hover{
+  color: #ffff;
 }
 .linkblock-navbar {
   display: flex;
