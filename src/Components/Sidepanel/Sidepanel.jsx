@@ -11,7 +11,7 @@ import jsonIcon from "..//..//Assets/Images/icon_json_sidepanel.svg";
 import mdgitIcon from "..//..//Assets/Images/icon_mdgit_sidepanel.svg";
 import { Link } from "react-router-dom";
 function Sidepanel() {
-  const [collapsed, setCollapsed] = useState(false); // State to manage collapse/expand
+  const [collapsed, setCollapsed] = useState(false);
 
   const data = [
     { id: 1, routeLink: "", title: "home.jsx", imageURL: reactIcon },
@@ -23,7 +23,7 @@ function Sidepanel() {
   ];
 
   const toggleCollapse = () => {
-    setCollapsed(!collapsed); // Toggles collapse state
+    setCollapsed(!collapsed);
   };
 
   return (
@@ -42,11 +42,11 @@ function Sidepanel() {
           ) : (
             <KeyboardArrowUpIcon style={{ color: "#CCCCCC" }} />
           )}
-          <p style={{ textTransform: "uppercase" }}>aditya's portfolio</p>
+          <p style={{ textTransform: "capitalize" }}>aditya's portfolio</p>
         </div>
         {!collapsed &&
           data.map((data) => (
-            <Link style={{textDecoration:'none'}} to={data.routeLink}>
+            <Link style={{ textDecoration: "none" }} to={data.routeLink}>
               <div className="file-link-sidepanel" key={data.id}>
                 <img
                   className="img-sidepanel"
