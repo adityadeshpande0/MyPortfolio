@@ -29,7 +29,7 @@ function Sidepanel() {
   return (
     <div className="main-block-sidepanel">
       <div className="explore-sidepanel">
-        <p className="text-explore-sidepanel">explorer</p>
+        <p className="text-explore-sidepanel text">explorer</p>
         <MoreHorizIcon
           className="three-dots-sidepanel"
           style={{ color: "#CCCCCC", cursor: "pointer" }}
@@ -42,7 +42,9 @@ function Sidepanel() {
           ) : (
             <KeyboardArrowUpIcon style={{ color: "#CCCCCC" }} />
           )}
-          <p style={{ textTransform: "uppercase" }}>aditya's portfolio</p>
+          <p className="text" style={{ textTransform: "uppercase" }}>
+            aditya's portfolio
+          </p>
         </div>
         {!collapsed &&
           data.map((data) => (
@@ -53,7 +55,7 @@ function Sidepanel() {
                   src={data.imageURL}
                   alt="react"
                 />
-                <p>{data.title}</p>
+                <p className="text">{data.title}</p>
               </div>
             </Link>
           ))}

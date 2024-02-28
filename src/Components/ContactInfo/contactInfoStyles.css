@@ -1,0 +1,14 @@
+.info-block-contact{
+    counter-reset: line;
+}
+.kv-pair-contact::before{
+    content: counter(line);
+    counter-increment: line;
+}
+.kv-pair-contact{
+    display: flex;
+    flex-direction: row;
+}
+.text-c{
+    margin: 0;
+}
