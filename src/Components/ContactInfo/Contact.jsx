@@ -1,18 +1,6 @@
 import React from "react";
 import "..//ContactInfo/contactInfoStyles.css";
-const InputField = ({ label, type, placeholder, value, onChange }) => {
-  return (
-    <div style={{display:"flex", flexDirection:"column"}}>
-      <label>{label}</label>
-      <input
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-      />
-    </div>
-  );
-};
+
 function Contact() {
   const data = [
     {
@@ -61,30 +49,27 @@ function Contact() {
       </div>
       <div>
         <p>or Fill Out This Form</p>
-        <InputField
-          label="Name"
-          type="text"
-          placeholder="Enter your name"
-          value=""
-        />
-          <InputField
-          label="Name"
-          type="text"
-          placeholder="Enter your name"
-          value=""
-        />
-          <InputField
-          label="Name"
-          type="text"
-          placeholder="Enter your name"
-          value=""
-        />
-          <InputField
-          label="Name"
-          type="text"
-          placeholder="Enter your name"
-          value=""
-        />
+        <div>
+          <label>Name</label>
+          <input />
+          <span>error message</span>
+        </div>
+        <div>
+          <label>Email</label>
+          <input />
+          <span>error message</span>
+        </div>
+        <div>
+          <label>Subject</label>
+          <input />
+          <span>error message</span>
+        </div>
+        <div>
+          <label>Message</label>
+          <input />
+          <span>error message</span>
+        </div>
+
         <button>submit</button>
       </div>
     </div>
