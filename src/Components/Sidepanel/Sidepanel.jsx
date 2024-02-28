@@ -46,7 +46,7 @@ function Sidepanel() {
         </div>
         {!collapsed &&
           data.map((data) => (
-            <Link to={data.routeLink}>
+            <Link style={{textDecoration:'none'}} to={data.routeLink}>
               <div className="file-link-sidepanel" key={data.id}>
                 <img
                   className="img-sidepanel"
