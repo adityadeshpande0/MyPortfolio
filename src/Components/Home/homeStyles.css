@@ -1,17 +1,21 @@
 .home-container {
   display: inline-block;
+  margin-left: 50px;
 }
 .type-anim-text {
-  font-size: 1em;
-  letter-spacing: 5px0;
+  font-size: 2.5em;
+  letter-spacing: 5px;
   border-right: 5px solid;
-  width: 100%;
+  width: 85%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(19),
-  cursor .4s step-end infinite alternate;
+  animation: typing 2s steps(18),
+  cursor .5s step-end infinite alternate;
 }
-
+.home-name-text{
+    font-size: 4em;
+    font-weight: 700;
+}
 /* Cursor Blinking */
 @keyframes cursor{
     50% {
