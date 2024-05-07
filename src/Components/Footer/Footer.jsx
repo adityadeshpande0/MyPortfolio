@@ -21,9 +21,7 @@ function Footer() {
         </Stack>
       </div>
       <Stack direction="row" spacing={4} className="third-block-footer">
-        <p className="text-footer">Ln 17, Col 25</p>
-        <p className="text-footer">UTF-8</p>
-        <p className="text-footer">React JS</p>
+        <p className="text-footer">Made in React JS</p>
         <img alt="bell" className="icon-footer" src={bellIcon} />
       </Stack>
     </div>
