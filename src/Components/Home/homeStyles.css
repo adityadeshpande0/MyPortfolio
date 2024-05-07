@@ -20,9 +20,10 @@ p {
     5vw,
     var(--max-font-size-animtext)
   );
-  letter-spacing: 5px;
+  color: #BBDEFB;
+  letter-spacing: 2px;
   border-right: 5px solid;
-  width: 90%;
+  width: 70%;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(18), cursor 0.5s step-end infinite alternate;
@@ -31,6 +32,7 @@ p {
   font-size: clamp(var(--min-font-size), 8vw, var(--max-font-size));
   font-weight: 700;
   overflow-wrap: break-word;
+  color: aliceblue;
 }
 /* Cursor Blinking */
 @keyframes cursor {
@@ -45,22 +47,27 @@ p {
     width: 0;
   }
 }
-.home-btn-container{
-    
-}
 .home-button {
-
-  height: 2.5rem;
-  width: 8rem;
-  border-radius: 0.5rem;
+  background-color: #0e639c;
   margin-top: 1rem;
-  color: black;
+  padding: 0.8rem;
+  color: #ffff;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  border: #0e639c 1px solid;
+}
+.home-button:active {
+  background-color: #ffff;
+  color: #252526;
+  border: #ffff 1px solid;
 }
 .cntm-button {
   margin-left: 1rem;
   background-color: transparent;
-  border: 0.2rem solid red;
+  color: white;
+  border: white 1px solid;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 // import AlertDialogBox from '../Popups/AlertDialogBox'
 import "../Home/homeStyles.css";
+import AlertDialogBox from "../Popups/AlertDialogBox";
 function Home() {
   return (
     <div className="home-main-container">
