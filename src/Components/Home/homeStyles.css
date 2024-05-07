@@ -1,29 +1,66 @@
+.home-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6%;
+  --min-font-size: 36px; /* Minimum font size */
+  --max-font-size: 66px; /* Maximum font size */
+  --min-font-size-animtext: 12px;
+  --max-font-size-animtext: 38px;
+  margin-top: 4vw;
+}
+p {
+  margin: 1.5vw 0 1.5vw 0;
+}
 .home-container {
   display: inline-block;
-  margin-left: 50px;
 }
 .type-anim-text {
-  font-size: 2.5em;
+  font-size: clamp(
+    var(--min-font-size-animtext),
+    5vw,
+    var(--max-font-size-animtext)
+  );
   letter-spacing: 5px;
   border-right: 5px solid;
-  width: 85%;
+  width: 90%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(18),
-  cursor .5s step-end infinite alternate;
+  animation: typing 2s steps(18), cursor 0.5s step-end infinite alternate;
 }
-.home-name-text{
-    font-size: 4em;
-    font-weight: 700;
+.home-name-text {
+  font-size: clamp(var(--min-font-size), 8vw, var(--max-font-size));
+  font-weight: 700;
+  overflow-wrap: break-word;
 }
 /* Cursor Blinking */
-@keyframes cursor{
-    50% {
-        border-color: transparent;
-    }
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /*Typing animation*/
-@keyframes typing{
-    from {width: 0;}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+.home-btn-container{
+    
+}
+.home-button {
+
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  color: black;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.cntm-button {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 0.2rem solid red;
 }

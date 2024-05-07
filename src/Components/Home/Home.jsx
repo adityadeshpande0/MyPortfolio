@@ -1,18 +1,19 @@
-import React from 'react'
+import React from "react";
 // import AlertDialogBox from '../Popups/AlertDialogBox'
-import '../Home/homeStyles.css'
+import "../Home/homeStyles.css";
 function Home() {
   return (
-    <div>
-      <div className='home-container'>
-        <p className='home-name-text'>Aditya Deshpande</p>
-        <p className='type-anim-text'>Front End Developer</p>
-        <button>My Projects</button>
-        <button>Contact me</button>
+    <div className="home-main-container">
+      <p className="home-name-text">Aditya Deshpande</p>
+      <div className="home-container">
+        <p className="type-anim-text">Front End Developer</p>
+        <div className="home-btn-container">
+        <button className="home-button">My Projects</button>
+        <button className="home-button cntm-button">Contact me</button>
+        </div>
       </div>
-      
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
