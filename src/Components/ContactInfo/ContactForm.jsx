@@ -34,8 +34,7 @@ function ContactForm() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       // Form is valid, handle submission logic here
@@ -54,63 +53,66 @@ function ContactForm() {
     setErrors({ ...errors, [name]: "" });
   };
 
+  // Check if all form fields are filled without errors
+  const isFormValid = Object.values(errors).every((error) => error === "");
+
   return (
     <div className="contactform-main-container">
       <p>or Fill Out This Form</p>
-      <form onSubmit={handleSubmit}>
-        <div className="inputbox-container">
-          <label className="input-label">Name</label>
-          <input
-            className="inputbox"
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && <span className="error-message">{errors.name}</span>}
-        </div>
-        <div className="inputbox-container">
-          <label className="input-label">Email</label>
-          <input
-            className="inputbox"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && (
-            <span className="error-message">{errors.email}</span>
-          )}
-        </div>
-        <div className="inputbox-container">
-          <label className="input-label">Contact</label>
-          <input
-            className="inputbox"
-            type="text"
-            name="contact"
-            value={formData.contact}
-            onChange={handleChange}
-          />
-          {errors.contact && (
-            <span className="error-message">{errors.contact}</span>
-          )}
-        </div>
-        <div className="inputbox-container">
-          <label className="input-label">Message</label>
-          <textarea
-            className="inputbox"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-          {errors.message && (
-            <span className="error-message">{errors.message}</span>
-          )}
-        </div>
-        <button className="contact-button" type="submit">
-          Git Push
-        </button>
-      </form>
+      <div className="inputbox-container">
+        <label className="input-label">Name</label>
+        <input
+          className="inputbox"
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        {errors.name && <span className="error-message">{errors.name}</span>}
+      </div>
+      <div className="inputbox-container">
+        <label className="input-label">Email</label>
+        <input
+          className="inputbox"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        {errors.email && <span className="error-message">{errors.email}</span>}
+      </div>
+      <div className="inputbox-container">
+        <label className="input-label">Contact</label>
+        <input
+          className="inputbox"
+          type="text"
+          name="contact"
+          value={formData.contact}
+          onChange={handleChange}
+        />
+        {errors.contact && (
+          <span className="error-message">{errors.contact}</span>
+        )}
+      </div>
+      <div className="inputbox-container">
+        <label className="input-label">Message</label>
+        <textarea
+          className="inputbox"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+        />
+        {errors.message && (
+          <span className="error-message">{errors.message}</span>
+        )}
+      </div>
+      <button
+        className="contact-button"
+        onClick={handleSubmit}
+        disabled={!isFormValid}
+      >
+        Git Push
+      </button>
     </div>
   );
 }

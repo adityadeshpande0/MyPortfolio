@@ -50,7 +50,7 @@
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 0.3rem;
+  margin-top: 1rem;
 }
 .contact-button:active {
   background-color: #ffff;
