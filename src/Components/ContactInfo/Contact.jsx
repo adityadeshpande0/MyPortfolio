@@ -1,5 +1,6 @@
 import React from "react";
 import "..//ContactInfo/contactInfoStyles.css";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   const data = [
@@ -47,31 +48,7 @@ function Contact() {
         ))}
         <p className="text-c">&#125;</p>
       </div>
-      <div>
-        <p>or Fill Out This Form</p>
-        <div>
-          <label>Name</label>
-          <input />
-          <span>error message</span>
-        </div>
-        <div>
-          <label>Email</label>
-          <input />
-          <span>error message</span>
-        </div>
-        <div>
-          <label>Subject</label>
-          <input />
-          <span>error message</span>
-        </div>
-        <div>
-          <label>Message</label>
-          <input />
-          <span>error message</span>
-        </div>
-
-        <button>submit</button>
-      </div>
+      <ContactForm/>
     </div>
   );
 }
