@@ -33,6 +33,7 @@ p {
   font-weight: 700;
   overflow-wrap: break-word;
   color: aliceblue;
+  
 }
 /* Cursor Blinking */
 @keyframes cursor {
@@ -47,6 +48,9 @@ p {
     width: 0;
   }
 }
+.home-btn-container{
+    margin-top: 2.5rem;
+}
 .home-button {
   background-color: #0e639c;
   margin-top: 1rem;
@@ -59,6 +63,7 @@ p {
   border: none;
   transition: background-color 0.3s ease;
   border: #0e639c 1px solid;
+  text-decoration: none;
 }
 .home-button:active {
   background-color: #ffff;
