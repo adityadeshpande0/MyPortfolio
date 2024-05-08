@@ -61,4 +61,38 @@
   .main-block-contact {
     flex-direction: column;
   }
+} 
+/* ---------------------------------- */
+.socials-container {
+  counter-reset: line;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.socials-item::before {
+  content: counter(line);
+  counter-increment: line;
+  margin-right: 1rem;
+  color: grey;
+}
+
+.socials-container a {
+  color: #0e639c;
+  text-decoration: none;
+}
+
+.socials-container a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.socials {
+  color: #0e639c;
+}
+
+@media screen and (max-width: 600px) {
+  .socials-container {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
 }

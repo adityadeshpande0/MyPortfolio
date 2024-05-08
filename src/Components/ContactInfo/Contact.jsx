@@ -17,36 +17,50 @@ function Contact() {
     {
       social: "github",
       name: "adityadeshpande0",
-      link: "https://github.com/adityadeshpande0",
+      link: "https://github.com/adityadeshpande0/",
     },
     {
       social: "linkedin",
       name: "linkedin",
       link: "https://linkedin.com/in/adityadeshpande1",
     },
-    {
-      social: "email",
-      name: "adityadeshpande1@outlook.com",
-      link: "mailto:adityadeshpande1@outlook.com",
-    },
   ];
 
   return (
     <div className="main-block-contact">
-      <div className="info-block-contact">
-        <p className="text-c">
-          <span>.socials</span> &#123;
+      <div className="socials-container">
+        <p className="socials-item">
+          <span className="socials">.socials</span> &#123;
         </p>
-        {data.map((item, index) => (
-          <div key={index} className="kv-pair-contact">
-            <p className="text-c">{item.social}: </p>
-            <a href={item.link} rel="noopener">
-              {item.name}
+        {data.slice(0, 8).map((item, index) => (
+          <p className="socials-item" key={index}>
+            &nbsp;&nbsp;&nbsp;{item.social}:{" "}
+            <a
+              className="socials-link"
+              href={item.link}
+              target="_blank"
+              rel="noopener"
+            >
+              {item.link}
             </a>
             ;
-          </div>
+          </p>
         ))}
-        <p className="text-c">&#125;</p>
+        {data.slice(8, data.length).map((item, index) => (
+          <p className="socials-item" key={index}>
+            &nbsp;&nbsp;{item.social}:{" "}
+            <a
+              className="socials-link"
+              href={item.href}
+              target="_blank"
+              rel="noopener"
+            >
+              {item.link}
+            </a>
+            ;
+          </p>
+        ))}
+        <p className="socials-item">&#125;</p>
       </div>
       <ContactForm/>
     </div>
