@@ -2,7 +2,6 @@ import React from "react";
 // import AlertDialogBox from '../Popups/AlertDialogBox'
 import "../Home/homeStyles.css";
 import { Link } from "react-router-dom";
-import AlertDialogBox from "../Popups/AlertDialogBox";
 function Home() {
   const techTags = [
     { skill: "React Js", color: "#E5FCC2" },

@@ -57,7 +57,7 @@ function ContactForm() {
   const isFormValid = Object.values(errors).every((error) => error === "");
 
   return (
-    <div className="contactform-main-container">
+    <div className="contactform-main-container" netlify>
       <p>or Fill Out This Form</p>
       <div className="inputbox-container">
         <label className="input-label">Name</label>
