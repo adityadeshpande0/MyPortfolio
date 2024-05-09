@@ -26,7 +26,7 @@ p {
   width: 70%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(18), cursor 0.5s step-end infinite alternate;
+  animation: typing 2s steps(16), cursor 0.5s step-start infinite alternate;
 }
 .home-name-text {
   font-size: clamp(var(--min-font-size), 8vw, var(--max-font-size));
@@ -44,7 +44,7 @@ p {
 /*Typing animation*/
 @keyframes typing {
   from {
-    width: 0;
+    width: 0px;
   }
 }
 .home-btn-container {
@@ -61,7 +61,7 @@ p {
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
-  border: #0e639c 1px solid;
+  border: #007acc 1px solid;
   text-decoration: none;
 }
 .home-button:active {
@@ -80,9 +80,13 @@ p {
   margin-right: 8px;
   background-color: transparent;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #777777;
+  /* border-radius: 0.5rem; */
+  border: 1px solid #585757;
   margin: 10px 10px 10px 0px;
+  cursor: pointer;
+}
+.home-skilltags:active{
+  background-color: #252526;
 }
 .skilltag-container {
   margin-top: 2rem;

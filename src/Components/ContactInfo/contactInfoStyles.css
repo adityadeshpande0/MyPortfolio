@@ -38,6 +38,7 @@
   width: 18rem;
   height: 2rem;
   background-color: #3a3a3a;
+  border: none;
 }
 .error-message {
   color: #ff7979;
@@ -70,7 +71,7 @@
 /* ---------------------------------- */
 .socials-container {
   counter-reset: line;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 2rem;
 }
 
@@ -97,7 +98,7 @@
 
 @media screen and (max-width: 600px) {
   .socials-container {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.5rem;
   }
 }
