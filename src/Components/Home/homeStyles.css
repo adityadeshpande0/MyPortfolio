@@ -20,7 +20,7 @@ p {
     5vw,
     var(--max-font-size-animtext)
   );
-  color: #BBDEFB;
+  color: #bbdefb;
   letter-spacing: 2px;
   border-right: 5px solid;
   width: 70%;
@@ -33,7 +33,6 @@ p {
   font-weight: 700;
   overflow-wrap: break-word;
   color: aliceblue;
-  
 }
 /* Cursor Blinking */
 @keyframes cursor {
@@ -48,8 +47,8 @@ p {
     width: 0;
   }
 }
-.home-btn-container{
-    margin-top: 2.5rem;
+.home-btn-container {
+  margin-top: 2.5rem;
 }
 .home-button {
   background-color: #0e639c;
@@ -75,4 +74,19 @@ p {
   background-color: transparent;
   color: white;
   border: white 1px solid;
+}
+.home-skilltags {
+  font-size: 0.8rem;
+  margin-right: 8px;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #777777;
+  margin: 10px 10px 10px 0px;
+}
+.skilltag-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }

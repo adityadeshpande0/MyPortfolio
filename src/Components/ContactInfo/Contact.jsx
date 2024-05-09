@@ -41,7 +41,7 @@ function Contact() {
               target="_blank"
               rel="noopener"
             >
-              {item.link}
+              {item.name}
             </a>
             ;
           </p>
