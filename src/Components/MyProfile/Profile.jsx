@@ -1,47 +1,54 @@
 import React from "react";
-
+import "./ProfileStyles.css";
 function Profile() {
+  const dataSkills = [
+    {
+      title: "Expertise",
+      description:
+        "Proficient in React JS and React Native, I bring a wealth of knowledge and skills to any project, ensuring efficient problem-solving and top-notch results.",
+    },
+    {
+      title: "Expertise",
+      description:
+        "Proficient in React JS and React Native, I bring a wealth of knowledge and skills to any project, ensuring efficient problem-solving and top-notch results.",
+    },
+    {
+      title: "Expertise",
+      description:
+        "Proficient in React JS and React Native, I bring a wealth of knowledge and skills to any project, ensuring efficient problem-solving and top-notch results.",
+    },
+    {
+      title: "Expertise",
+      description:
+        "Proficient in React JS and React Native, I bring a wealth of knowledge and skills to any project, ensuring efficient problem-solving and top-notch results.",
+    },
+  ];
+
   return (
-    <div style={{width:'90%', display:'flex', alignItems:'center', flexDirection:'column'}} className="portfolio">
+    <div className="socials-container">
       <div className="portfolio-intro">
-        <h1 className="portfolio-intro__heading">Welcome to my portfolio!</h1>
+        <h2 className="portfolio-intro__heading">
+          &lt;!--Welcome to my portfolio!--!&gt;
+        </h2>
         <p className="portfolio-intro__text">
-          I'm a passionate Front End Developer with over 2.5 years of experience
-          in crafting exceptional digital experiences using React JS, React
-          Native, and related technologies. My journey in the world of
-          development began with a fascination for creating elegant and
+          &#47;&#47;&nbsp;I'm a passionate Front End Developer with over 2.5
+          years of experience in crafting exceptional digital experiences using
+          React JS, React Native, and related technologies. My journey in the
+          world of development began with a fascination for creating elegant and
           functional user interfaces, and it has only grown stronger since then.
         </p>
       </div>
-      <div className="why-choose-me">
-        <h2 className="why-choose-me__heading">Why Choose Me?</h2>
-        <ul className="why-choose-me__list">
-          <li className="why-choose-me__item">
-            <strong className="why-choose-me__item-heading">Expertise:</strong>{" "}
-            Proficient in React JS and React Native, I bring a wealth of
-            knowledge and skills to any project, ensuring efficient
-            problem-solving and top-notch results.
-          </li>
-          <li className="why-choose-me__item">
-            <strong className="why-choose-me__item-heading">Passion:</strong>{" "}
-            Driven by a genuine love for development, I invest my energy into
-            every task, guaranteeing dedication and exceptional outcomes.
-          </li>
-          <li className="why-choose-me__item">
-            <strong className="why-choose-me__item-heading">
-              Collaboration:
-            </strong>{" "}
-            Valuing teamwork, I actively foster strong relationships with
-            colleagues, contributing to a positive work environment and shared
-            success.
-          </li>
-          <li className="why-choose-me__item">
-            <strong className="why-choose-me__item-heading">Innovation:</strong>{" "}
-            Committed to staying ahead of industry trends, I consistently
-            deliver cutting-edge solutions that stand the test of time.
-          </li>
-        </ul>
-      </div>
+      <p className="socials-item">
+        <span className="socials">const WhyHireMe ()=&gt; </span> &#91;
+      </p>
+      {dataSkills.slice(0, 5).map((item, index) => (
+        <p className="socials-item" key={index}>
+          &nbsp;&nbsp;&#123;&nbsp;
+          <strong>&quot;{item.title}&quot; : &quot;</strong>
+          {item.description}&quot;&#125;
+        </p>
+      ))}
+      <p className="socials-item">&#93;</p>
     </div>
   );
 }

@@ -19,7 +19,8 @@ function Routers() {
         <Navbar />
         <div className="content-block-router">
           <Appbar />
-          <Sidepanel/>
+          {/* <Sidepanel/> */}
+          <div className="routes-container">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/github" element={<Github />} />
@@ -29,6 +30,7 @@ function Routers() {
             <Route path="/about" element={<Profile />} />
             <Route path="/settings" element={<Settings/>}/>
           </Routes>
+          </div>
         </div>
         <Footer />
       </div>

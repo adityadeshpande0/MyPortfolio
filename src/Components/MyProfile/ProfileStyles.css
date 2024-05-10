@@ -1,0 +1,49 @@
+.portfolio-intro__text{
+    margin: 0px;
+    padding: 0px;
+}
+.portfolio-intro__text{
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.why-choose-me__item-heading{
+    font-size: 1rem;
+}
+.why-choose-me__item{
+    text-align: justify;
+    margin-top: 0.5rem;
+}
+/* ----------------------------------------------------- */
+.socials-container {
+    counter-reset: line;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .socials-item::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey;
+  }
+  
+  .socials-container a {
+    color: #ff7979;
+    text-decoration: none;
+  }
+  
+  .socials-container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .socials {
+    color: #ff7979;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .socials-container {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
