@@ -11,7 +11,12 @@ function Footer() {
       <div className="second-parent-block-footer">
         <Stack direction="row" spacing={1} className="first-block-footer">
           <img alt="branch" className="icon-footer" src={branchIcon} />
-          <p className="text-footer">main</p>
+          <a
+            href="https://github.com/adityadeshpande0/MyPortfolio"
+            className="text-footer"
+          >
+            main
+          </a>
         </Stack>
         <Stack direction="row" spacing={1} className="second-block-footer">
           <img alt="cross" className="icon-footer" src={crossIcon} />
