@@ -19,7 +19,7 @@ function Routers() {
         <Navbar />
         <div className="content-block-router">
           <Appbar />
-          {/* <Sidepanel/> */}
+          <Sidepanel/>
           <div className="routes-container">
           <Routes>
             <Route exact path="/" element={<Home />} />
