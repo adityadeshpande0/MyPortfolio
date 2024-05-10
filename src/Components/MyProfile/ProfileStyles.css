@@ -14,36 +14,37 @@
     margin-top: 0.5rem;
 }
 /* ----------------------------------------------------- */
-.socials-container {
+.aboutme-container {
     counter-reset: line;
     font-size: 1.5rem;
-    line-height: 2rem;
+    
+    /* line-height: 2rem; */
   }
-  
-  .socials-item::before {
+  .portfolio-intro__heading{
+    color: #a39c9c;
+  }
+  .portfolio-intro__text{
+    color: #a39c9c;
+  }
+  .skills-item::before {
     content: counter(line);
     counter-increment: line;
     margin-right: 1rem;
     color: grey;
+    
   }
-  
-  .socials-container a {
-    color: #ff7979;
-    text-decoration: none;
+  .skills-item{
+    text-align: justify;
+    font-size: 0.9rem;
+    color: #FFD166;
   }
-  
-  .socials-container a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .socials {
-    color: #ff7979;
+  .skill-functionheading {
+    color: #8093F1;
   }
   
   @media screen and (max-width: 600px) {
-    .socials-container {
+    .aboutme-container {
       font-size: 1rem;
-      line-height: 1.5rem;
+      /* line-height: 1.5rem; */
     }
   }
