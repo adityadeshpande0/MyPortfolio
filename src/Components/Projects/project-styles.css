@@ -1,4 +1,24 @@
-.projects-grid{
-    display: flex;
-    flex-direction: row;
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    flex: 1 1 100%;
+  }
 }
