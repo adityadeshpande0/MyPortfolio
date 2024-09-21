@@ -1,0 +1,4 @@
+.projects-grid{
+    display: flex;
+    flex-direction: row;
+}
