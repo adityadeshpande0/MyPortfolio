@@ -20,8 +20,8 @@ function Contact() {
       link: "https://github.com/adityadeshpande0/",
     },
     {
-      social: "linkedin",
-      name: "linkedin",
+      social: "linkedIn",
+      name: "linkedIn",
       link: "https://linkedin.com/in/adityadeshpande1",
     },
   ];

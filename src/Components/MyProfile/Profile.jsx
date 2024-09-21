@@ -31,11 +31,10 @@ function Profile() {
           &lt;!--Welcome to my portfolio!--!&gt;
         </h2>
         <p className="portfolio-intro__text">
-          &#47;&#47;&nbsp;I'm a passionate Front End Developer with over 2.5
-          years of experience in crafting exceptional digital experiences using
-          React JS, React Native, and related technologies. My journey in the
-          world of development began with a fascination for creating elegant and
-          functional user interfaces, and it has only grown stronger since then.
+          &#47;&#47;&nbsp;React JS Front-End Developer with around 3 years of
+          hands-on experience in enterprise-level projects. Experienced in
+          collaborating with clients across E-Commerce, Fuel Data Platform, and
+          Rewards Platform domains.
         </p>
       </div>
       <p className="skills-item">
