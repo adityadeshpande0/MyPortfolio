@@ -6,7 +6,7 @@ function MainLoader() {
       style={{
         display: "flex",
         justifyContent: "center",
-        margin: "15% 5%", // Adjusted margin for responsiveness
+        margin: "15% 5%",
       }}
     >
       <h4 style={{ color: "#FFF176" }}>This website is under Development</h4>
